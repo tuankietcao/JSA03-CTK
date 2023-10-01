@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JBS07 Trung thu</title>
+    <link rel="shortcut icon" href="images/pngegg.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <div id="logo">
+      <a href="index.html"
+        ><img src="images/pngegg.png" alt="" style="height: 120px"
+      /></a>
+    </div>
+    <div id="nav">
+      <!--<div>
+        <div class="container" onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>  
+      </div> -->
+      <div id="nav-bar">
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="about.html">Giới thiệu</a></li>
+          <li><a href="baibao.html">Bài báo</a></li>
+          <li><a href="lienhe.html">Liên hệ</a></li>
+        </ul>
+      </div>
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="login-button">Đăng nhập</button>
+
+    <div id="id01" class="modal">
+      
+      <form class="modal-content">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+          <h3>Đăng nhập</h3>
+          <img src="https://v4m9y9w9.rocketcdn.me/wp-content/uploads/2020/10/coffee-and-books-featured.png" style="margin-top: 20px;" width="600px" alt="">
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Tên</b></label>
+          <input type="text" placeholder="Nhập tên của bạn..." name="uname" id="uname">
+
+          <label for="psw"><b>Mật khẩu</b></label>
+          <input type="password" placeholder="Nhập mật khẩu..." name="psw" id="psw">
+            
+          <button type="button" onclick="let name_input = document.getElementById('uname').value 
+          let password_input = document.getElementById('psw').value
+          document.getElementById('login-text').innerHTML='CHÀO MỪNG, ' + name_input.toUpperCase()
+          document.getElementById('login-button').style.display='none'">Đăng nhập</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Nhớ tài khoản
+          </label>
+        </div>
+        </div>
+      </form>
+    </div>
+    </div>
+    <div>
+      <div id="thanhgioithieu">
+        <div id="tgt-info">
+          <h3 style="font-weight: 600; margin-left: 2px;" id="login-text">CHÀO MỪNG</h3>
+          <h2 style="font-family: font_title; margin-bottom: 20px;">JSB07 TRUNG THU</h2>
+          <p style="font-size: 15px; ">"Tết Trung Thu đang đến rất gần, chúng ta hãy cùng nhau tạo thêm những ký ức khó phai cho gia đình, cho con trẻ và cho những mối giao hảo thân tình thêm bền chặt. Qua đó, Tết Trung Thu của chúng ta luôn sáng mãi trong lòng các thế hệ người Việt Nam."</p>
+          <a href="about.html" id="tgt-btn">GIỚI THIỆU</a>
+        </div>
+        <div id="tgt-image">
+          <img src="https://banhtrungthukinhdo.com.vn/static/images/banh-trung-thu-kinh-do-thieu-nhi.webp" alt="">
+        </div>
+
+      </div>
+      <div id="main">
+        <div class="content">
+          <h1 class="title"> <img src="images/title_left.png" alt=""> TẾT TRUNG THU RẰM THÁNG TÁM <img src="images/title_right.png" alt=""></h1>
+          <br><br>
+          <img src="https://lehoitrungthu.com/wp-content/uploads/2020/09/604E1010-B915-40BC-9A58-EB803883D4B2.jpeg" alt="" width="840px" style="display: block; margin: auto;">
+          <div style="display: flex; justify-content: space-between; width: 840px; margin: 30px auto;">
+            <div>
+              <p style="text-align: start; margin: 0; margin-right: 30px;">Thời gian quay vội, cuộc sống mưu sinh đôi khi chúng ta quên mất có một ngày gọi là Trung thu, quên mất những kỉ niệm mình từng có, quên mất những giá trị thực sự làm nên ngày Tết đoàn viên.</p>
+            </div>
+            <div>
+              <p style="text-align: start; margin: 0;">Hãy cùng xem những tâm tư của nhiều người vẫn hoài niệm mùa Trung thu thơ bé từ khắp mọi miền để gần nhau hơn. Chỉ cần ở bên người mà chúng ta thương yêu là đã trọn vẹn lắm rồi.</p>
+            </div>
+          </div>
+          <!-- <
+          <p>
+            “ Tết Trung Thu rước đèn đi chơi <br />
+            Em rước đèn đi khắp phố phường <br />
+            Lòng vui sướng với đèn trong tay <br />
+            Em múa ca trong ánh trăng rằm ”
+          </p>
+          <p>
+            Với nền văn hóa đa dạng và độc đáo, hàng năm nước ta có không ít những
+            ngày lễ tết cổ truyền giàu ý nghĩa như Tết Nguyên đán, Tết thanh minh,
+            Tết táo quân.... Trong đó không thể không kể đến tết trung thu ngày
+            tết gắn liền với niềm vui, tiếng cười thiếu nhi. Chỉ đứng sau dịp Tết
+            Nguyên đán, Tết Trung thu mang những ý nghĩa đặc biệt, giá trị tinh
+            thần to lớn. Chính vì vậy nên trang web này đã được tạo ra nhằm tôn
+            vinh những giá trị truyền thống của trung thu và hâm nóng tình cảm của
+            mọi người mỗi khi đến dịp Tết Trung thu.
+          </p>
+        </div>
+        <div> -->
+          <h1 class="title"><img src="images/title_left.png" alt=""> TẾT TRUNG THU XƯA VÀ NAY <img src="images/title_right.png" alt=""></h1>
+          <br><br>
+          <p style="text-align: center;">Đến mùa trăng sáng chẳng quên <br>
+            Trung thu là lúc về bên gia đình <br>
+            Đêm thu phá cỗ linh đình <br>
+            Bánh Thu chia ngọt thắm tình thương yêu</p>
+          <br><br>
+          <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <img src="baibao/images/tettrungthu01.jpg" alt="" />
+                <a href="baibao1.html"
+                  ><h3 class="art-title">Nguồn gốc và ý nghĩa của trung thu</h3></a
+                >
+                <p>
+                  Tết trung thu không chỉ riêng gì đất nước Việt Nam chúng ta, đều có
+                  ngày tết trên khắp các nước Châu Á. Ngày tết trung thu được xem...
+                </p>
+                <a href="" class="readmore"
+                  >Khám phá <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+              <div class="swiper-slide">
+                <img src="baibao/images/4c999a45-aaa.jpg" alt="" />
+                <a href="baibao1.html"
+                  ><h3 class="art-title">
+                    Bánh trung thu là gì? Ý nghĩa và nguồn gốc từ đâu?
+                  </h3></a
+                >
+                <p>
+                  Vào ngày rằm tháng 8 hàng năm bạn sẽ thấy rất nhiều bánh trung thu
+                  được bày bán khắp nơi và mỗi gia đình đều...
+                </p>
+                <a href="" class="readmore"
+                  >Khám phá <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+
+
+              <div class="swiper-slide">
+                <img src="baibao/images/trungthu01.jpg" alt="" />
+                <a href="baibao1.html"
+                  ><h3 class="art-title">Tết trung thu ngày xưa</h3></a
+                >
+                <p>
+                  Hoàn cảnh thay đổi, con người thay đổi, những giá trị cũ cũng thay đổi, niềm vui cũng chẳng còn giống nhau, hoài niệm...
+                </p>
+                <a href="" class="readmore"
+                  >Khám phá <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+              <div class="swiper-slide">
+                <img src="baibao/images/tet-trung-thu-o-cac-nuoc-dien-ra-the-nao-145721.jpg" alt="" />
+                <a href="baibao1.html"
+                  ><h3 class="art-title">Những nước nào đón Tết Trung thu</h3></a
+                >
+                <p>
+                  Ngoài Việt Nam, còn những nước nào cũng có lễ hội trăng rằm tháng 8 âm lịch và phong tục đón Tết Trung thu...
+                </p>
+                <a href="" class="readmore"
+                  >Khám phá <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+              <div class="swiper-slide">
+                <img src="baibao/images/ruocdenongsao.jpg" alt="" />
+                <a href="baibao1.html"
+                  ><h3 class="art-title">Những hoạt động truyền thống trong ngày Tết Trung thu</h3></a
+                >
+                <p>
+                  Tết trung thu " Đêm hội trăng rằm " ngày của các em thiếu niên nhi đồng là sân chơi bổ ích, lành mạnh, vui tươi, còn là món quà tinh thần thiết thực, thể hiện sự quan...
+                </p>
+                <a href="" class="readmore"
+                  >Khám phá <i class="fa-solid fa-arrow-right"></i
+                ></a>
+              </div>
+              <div class="swiper-slide">
+                <img src="baibao/images/download (1).jpg" alt="" />
+                <a href="baibao1.html"
+                  ><h3 class="art-title">Những địa điểm vui chơi Trung thu không thể bỏ lỡ tại Sài Gòn</h3></a
+                >
+                <p>
+                  Tết Trung Thu là dịp thể hiện tình yêu thương của cha mẹ dành cho con cái và là sự thể hiện của niềm vui của trẻ nhỏ. Cùng theo chân mình ngắm...
+                </p>
+                <a href="" class="readmore"
+                  >Khám phá <i class="fa-solid fa-arrow-right"></i
+                ></a>
+                  </div>
+              ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </div>
+      <br><br>
+      <img src="images/95A3AEE1-1E8D-41E7-8B80-0693836B192D.jpeg" alt="" style="border-radius: 50%; display: block; margin: auto;" width="800px ">
+          <p style="text-align: center; margin-top: 10px;">- Chúng ta sẽ không còn giãn cách!</p>
+          <h2 style="margin-top:20px;text-align:center">“Trung thu 2023 sẽ diễn ra vào ngày Thứ 6, ngày 29/9 Dương lịch”</h2>
+          <br>
+          <audio controls src="images/Thang-Cuoi-Ngoc-Hien.mp3" autoplay style="margin-top:50px ;width: 40%; display:block; margin:auto"></audio>
+
+          <br><br><br><br><br>
+      <div>
+        <img src="images/bg-footer.png" alt="" style="width: 100%; vertical-align: middle;">
+      </div>
+      <hr style="border: 1px solid black;">
+      <div id="footer">
+        <div id="temp">
+          <div class="footer-content">
+            <h1>JBS07 Trung thu</h1>
+            <p>"Trang web này đã được tạo ra nhằm tôn
+              vinh những giá trị truyền thống của trung thu và hâm nóng tình cảm của
+              mọi người mỗi khi đến dịp Tết Trung thu."</p>
+          </div>
+          <div class="footer-content">
+            <h1>Thông tin liên lạc</h1>
+            <p><i class="fa-solid fa-phone"></i> 0904694794</p>
+            <p><i class="fa-solid fa-envelope"></i> caotuankiet2008@gmail.com</p>
+            <p><i class="fa-solid fa-location-dot"></i> 1 Trường Chinh, Phường 11, Tân Bình, TP.HCM</p>
+          </div>
+          <div class="footer-content">
+            <h1>Đường link</h1>
+            <ul>
+              <a href="index.html"><li>Trang chủ</li></a>
+              <a href="about.html"><li>Giới thiệu</li></a>
+              <a href="baibao.html"><li>Bài báo</li></a>
+              <a href="lienhe.html"><li>Liên hệ</li></a>
+            </ul>
+          </div>
+        </div>
+        <br>
+        <hr style="border: 1px solid black">
+        <div id="end">
+          <div style="margin-left: 6%;">Sản phẩm cuối khoá - Cao Tuấn Kiệt</div>
+          <div><ul style>
+            <li><a href="https://www.facebook.com"><i class="fa-brands fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://discord.com"><i class="fa-brands fa-discord"></i></a></li>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i></a></li>
+          </ul></div>
+        </div>
+      </div>
+    </div>
+  </body>
+  
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script src="main.js"></script>
+</html>
